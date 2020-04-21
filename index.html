@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>RepairIt</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <section class="fixmeapp">
+    <header class="header">
+      <h1>rep🔥irs</h1>
+      <form id="myForm" onsubmit="shop.addRepair(event)">
+        <input id="desc" class="new-repair" placeholder="What needs to be repaired?" autofocus="">
+      </form>
+    </header>
+    <section class="main">
+      <ul class="repair-list" id="repairlist">
+      </ul>
+    </section>
+    <footer class="footer">
+      <button class="clear-completed" onclick="shop.clearCompleted(event)">Clear completed</button>
+    </footer>
+  </section>
+  <script src="./index.js"></script>
+</body>
+
+</html>
